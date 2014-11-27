@@ -1,5 +1,12 @@
 <IfModule mod_rewrite.c>
-   RewriteEngine on
+  RewriteEngine on
 
-   RewriteRule    ^$ html/index.php   [L]
+  ErrorDocument 400 /html/error.php
+  ErrorDocument 401 /html/error.php
+  ErrorDocument 403 /html/error.php
+  ErrorDocument 404 /html/error.php
+  ErrorDocument 500 /html/error.php
+
+  RewriteRule   ^$ html/index.php   [L]
+
 </IfModule>
