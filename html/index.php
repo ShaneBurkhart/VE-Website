@@ -12,7 +12,6 @@
                 $class = "item";
 
               echo "<div class=\"" . $class . "\">";
-              echo 1/0
               echo "</div>";
             }
           ?>
@@ -46,7 +45,4 @@
       </ul>
     </div>
   </div>
-  <?php
-    echo $this->Html->script('home.js');
-  ?>
 </div>

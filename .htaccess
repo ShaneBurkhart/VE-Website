@@ -7,6 +7,9 @@
   ErrorDocument 404 /html/error.php
   ErrorDocument 500 /html/error.php
 
-  RewriteRule   ^$ html/index.php   [L]
+  RewriteRule   ^css/ - [L]
+  RewriteRule   ^js/ - [L]
+  RewriteRule   ^img/ - [L]
+  RewriteRule   ^.*$ index.php   [L]
 
 </IfModule>
