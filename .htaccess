@@ -10,6 +10,6 @@
   RewriteRule   ^css/ - [L]
   RewriteRule   ^js/ - [L]
   RewriteRule   ^img/ - [L]
-  RewriteRule   ^.*$ index.php   [L]
+  RewriteRule   ^.*$ router.php   [L]
 
 </IfModule>
