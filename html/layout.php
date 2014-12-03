@@ -14,27 +14,24 @@
 
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
   </head>
   <body>
-    <div id="container">
+    <div class="page">
       <header class="container">
-        <a href="/"><?php //echo $this->HTML->image('logo.png', array('id' => 'logo')) ?></a>
+        <div class="logo-banner">
+        </div>
         <div id="header-nav" class="pull-right">
           <a href="/">Home</a>
-          <a href="/contact">Contact Us</a>
-          <a href="/developer/login">Developer Login</a>
+          <a href="/about">About</a>
+          <a href="/developer_login">Developer Login</a>
         </div>
       </header>
-      <div id="content">
+      <div class="content">
 
         <?php require($current_template); ?>
 
       </div>
-      <footer>
-        <div class="container">
-          <p>Created by Shane Burkhart</p>
-        </div>
-      </footer>
     </div>
   </body>
 </html>
