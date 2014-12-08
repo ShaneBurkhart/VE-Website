@@ -20,6 +20,7 @@
     <div class="page">
       <header class="container">
         <div class="logo-banner">
+          <img src="/img/ve_logo.png" alt="">
         </div>
         <div id="header-nav" class="pull-right">
           <a href="/">Home</a>

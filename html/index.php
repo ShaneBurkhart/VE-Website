@@ -3,8 +3,8 @@
     <!-- Carousel items -->
     <div class="carousel-inner">
       <?php
-        for ($i = 0 ; $i < 8 ; $i ++){
-          if($i == 0)
+        for ($i = 1 ; $i <= 12 ; $i ++){
+          if($i == 1)
             $class = "active item";
           else
             $class = "item";
