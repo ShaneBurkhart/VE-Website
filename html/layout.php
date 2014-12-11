@@ -23,9 +23,21 @@
           <img src="/img/ve_logo.png" alt="">
         </div>
         <div id="header-nav" class="pull-right">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/developer_login">Developer Login</a>
+          <?php
+            if($current_route === "/") {
+              echo '<a href="/" class="active" onclick="return false;">Home</a>';
+            } else {
+              echo '<a href="/">Home</a>';
+            }
+          ?>
+          <?php
+            if($current_route === "/about") {
+              echo '<a href="/about" class="active" onclick="return false;">About</a>';
+            } else {
+              echo '<a href="/about">About</a>';
+            }
+          ?>
+          <a href="http://www.plansource.io/users/sign_in" class="last">Developer Login</a>
         </div>
       </header>
       <div class="content">

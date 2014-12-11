@@ -1,4 +1,6 @@
 <?php
+$SERVER_ROOT = $_SERVER["DOCUMENT_ROOT"];
+ob_start();
 
 // ERROR HANDLING.
 register_shutdown_function("fatal_handler");
@@ -12,7 +14,13 @@ function fatal_handler() {
     $errline = $error["line"];
     $errstr  = $error["message"];
 
-    echo "There was a fatal error...";
+    // Clear screen
+    ob_end_clean();
+
+    $current_route = NULL;
+    $current_template = $_SERVER["DOCUMENT_ROOT"] . "/html/500.php";
+    require("html/layout.php");
+    exit();
   }
 }
 
@@ -20,8 +28,7 @@ function fatal_handler() {
 // ROUTING
 $ROUTES = array(
   "/" => "index",
-  "/about" => "about",
-  "/developer_login" => "developer_login"
+  "/about" => "about"
 );
 
 // Remove query from URI.  If false, there is no query.
@@ -30,10 +37,12 @@ if($current_route == FALSE) {
   $current_route = $_SERVER["REQUEST_URI"];
 }
 
-
 // RENDERING
-$current_template = "html/" . $ROUTES[$current_route] . ".php";
-// TODO Catch when not found.
-require("html/layout.php");
+if(array_key_exists($current_route, $ROUTES) === TRUE) {
+  $current_template = $SERVER_ROOT . "/html/" . $ROUTES[$current_route] . ".php";
+} else {
+  $current_template = $SERVER_ROOT . "/html/404.php";
+}
+require($SERVER_ROOT . "/html/layout.php");
 
 ?>
