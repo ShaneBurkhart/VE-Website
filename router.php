@@ -28,6 +28,7 @@ function fatal_handler() {
 // ROUTING
 $ROUTES = array(
   "/" => "index",
+  "/contact" => "contact",
   "/about" => "about"
 );
 
