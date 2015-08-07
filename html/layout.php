@@ -37,6 +37,13 @@
               echo '<a href="/about">About</a>';
             }
           ?>
+          <?php
+            if($current_route === "/contact") {
+              echo '<a href="/contact" class="active" onclick="return false;">Contact</a>';
+            } else {
+              echo '<a href="/contact">Contact</a>';
+            }
+          ?>
           <a href="http://www.plansource.io/users/sign_in" class="last">Developer Login</a>
         </div>
       </header>
