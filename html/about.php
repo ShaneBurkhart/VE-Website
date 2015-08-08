@@ -19,7 +19,7 @@
     </section>
     <hr>
     <div class="clear">
-        <h2>Our Projects</h2>
+        <h2>Recent Projects</h2>
         <div class="project">
             <img src="/img/clayton-motor-court.jpg" width="600" class="left">
             <ul>
@@ -46,7 +46,7 @@
             <img src="/img/9th-elm.jpg" width="600" class="left">
             <ul>
                 <li><p>Retail + Student Apartments (196 Beds)</p></li>
-                <li><p>3 Story Apartments Over Podium</p></li>
+                <li><p>5 Story Apartments Over Podium</p></li>
                 <li><p>Columbia, MO</p></li>
                 <li><p>Under Construction</p></li>
             </ul>

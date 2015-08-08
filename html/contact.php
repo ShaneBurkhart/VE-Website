@@ -9,7 +9,7 @@
       <div class="about-overlay">
         <div class="partnership">
           <h2>
-            Partnership
+            Partners
           </h2>
           <p>
             Michael Burkhart<br>
