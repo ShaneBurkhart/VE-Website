@@ -7,7 +7,7 @@
   </p>
   <p>
     It would really help us out if you could let us know by contacting someone on
-    <a href="/about">this</a>
+    <a href="/contact">this</a>
     page.
   </p>
   <p>
