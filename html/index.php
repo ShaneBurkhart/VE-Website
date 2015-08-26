@@ -4,7 +4,8 @@
     <div class="carousel-inner">
       <?php
         $json = file_get_contents("http://plansource.io/ve_pictures/all");
-        $urls = json_decode($json, true)["urls"];
+        $urls_arr = json_decode($json, true);
+        $urls = $urls_arr["urls"];
         for ($i = 0; $i < count($urls); $i++) {
           if($i == 0) {
             $class = "active item";
