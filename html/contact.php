@@ -1,6 +1,6 @@
 <div class="about-container">
   <div class="container">
-    <img src="/img/1.jpg" alt="">
+    <img src="/img/orr_street.jpg" alt="Orr Street Lofts, Columbia, Missouri">
   </div>
 
   <div class="about-overlay-container">
