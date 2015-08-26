@@ -7,7 +7,7 @@
   </p>
   <p>
     If you think this page should exist, contact someone on
-    <a href="/about">this</a>
+    <a href="/contact">this</a>
     page.
   </p>
   <p>
