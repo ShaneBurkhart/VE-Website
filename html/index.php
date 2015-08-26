@@ -3,15 +3,17 @@
     <!-- Carousel items -->
     <div class="carousel-inner">
       <?php
-        for ($i = 1; $i <= 12; $i ++) {
-          if($i == 1) {
+        $json = file_get_contents("http://plansource.io/ve_pictures/all");
+        $urls = json_decode($json, true)["urls"];
+        for ($i = 0; $i < count($urls); $i++) {
+          if($i == 0) {
             $class = "active item";
           } else {
             $class = "item";
           }
 
           echo "<div class=\"" . $class . "\">";
-          echo "<img src='/img/" . $i . ".jpg' alt=''>";
+          echo "<img src='" . $urls[$i] . "' alt=''>";
           echo "</div>";
         }
       ?>
