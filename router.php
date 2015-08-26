@@ -13,6 +13,7 @@ function fatal_handler() {
     $errfile = $error["file"];
     $errline = $error["line"];
     $errstr  = $error["message"];
+    error_log($errstr);
 
     // Clear screen
     ob_end_clean();
